@@ -1,20 +1,23 @@
 # ReSRV's Bash Environemnt
 
 # ALIASED SHORTCUTS
-alias refresh='. /Users/llaski/.bash_profile'
-alias sites='cd /srv/Sites'
+alias rdrefresh='. /Users/llaski/.bash_profile'
+alias rdsites='cd /srv/Sites'
+
+alias refresh='. /Users/larrylaski/.bash_profile'
+alias sites='cd /Users/larrylaski/Sites'
 alias subl='open -a "Sublime Text"'
 alias bash='subl ~/.bash_profile'
 alias hosts='subl /etc/hosts'
 alias nginxconf='subl /usr/local/etc/nginx'
 alias nginxerrorlog='subl /usr/local/Cellar/nginx/1.4.7/logs/error.log'
-alias nginx-restart='sudo nginx -s stop; sudo nginx;'
+alias nginxrestart='sudo nginx -s stop; sudo nginx;'
 alias ll='ls -lhaG'
 alias show_hidden_files="defaults write com.apple.finder AppleShowAllFiles TRUE"
 alias hide_hidden_files="defaults write com.apple.finder AppleShowAllFiles FALSE"
 
 #Additions
-export PATH=/Users/llaski/bin:/usr/local/bin:/usr/local/sbin:/bin:$PATH
+export PATH=/Applications/MAMP/bin/php/php5.4.4/bin:/Users/llaski/bin:/usr/local/bin:/usr/local/sbin:/bin:$PATH
 
 #Colors
 txtblk='\e[0;30m' # Black - Regular
@@ -60,7 +63,7 @@ function ps1_git_dirty {
 #   if [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]]; then
 #     git branch 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/ (\1*)/"
 #   fi
-}
+# }
 
 #$bldred\$(parse_git_dirty)
 export PS1="$bldgrn$USER:$bldcyn\$PWD $bldgrn\$(ps1_git_branch) ⚡  $bldcyn"
