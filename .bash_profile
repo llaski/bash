@@ -19,7 +19,7 @@ alias hide_hidden_files="defaults write com.apple.finder AppleShowAllFiles FALSE
 
 alias mampconf='subl /Applications/MAMP/conf/apache'
 alias vm='ssh vagrant@127.0.0.1 -p 2222'
-
+#alias composer='php -d zend.enable_gc=0 ~/bin/composer'
 
 #Additions
 export PATH=/Applications/MAMP/bin/php/php5.4.4/bin:/Users/llaski/bin:/usr/local/bin:/usr/local/sbin:/bin:$PATH
