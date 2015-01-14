@@ -22,7 +22,7 @@ alias vm='ssh vagrant@127.0.0.1 -p 2222'
 #alias composer='php -d zend.enable_gc=0 ~/bin/composer'
 
 #Additions
-export PATH=/Applications/MAMP/bin/php/php5.4.4/bin:/Users/llaski/bin:/usr/local/bin:/usr/local/sbin:/bin:$PATH
+export PATH=/Applications/MAMP/bin/php/php5.4.4/bin:/Users/larrylaski/bin:/Users/larrylaski/.composer/vendor/bin:/usr/lib/node_modules:/usr/local/bin:/usr/local/sbin:/bin:$PATH
 export LARAVEL_ENV=local
 export EDITOR='subl -w'
 
