@@ -21,6 +21,13 @@ alias mampconf='subl /Applications/MAMP/conf/apache'
 alias vm='ssh vagrant@127.0.0.1 -p 2222'
 #alias composer='php -d zend.enable_gc=0 ~/bin/composer'
 
+#Github aliases
+alias gs="git status"
+alias ga="git add"
+alias gc="git commit -m"
+alias gac="git commit -am"
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
 #Additions
 export PATH=/Applications/MAMP/bin/php/php5.4.4/bin:/Users/larrylaski/bin:/Users/larrylaski/.composer/vendor/bin:/usr/lib/node_modules:/usr/local/bin:/usr/local/sbin:/bin:$PATH
 export LARAVEL_ENV=local
