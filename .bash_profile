@@ -13,6 +13,7 @@ alias nginxconf='subl /usr/local/etc/nginx'
 alias nginxerrorlog='subl /usr/local/Cellar/nginx/1.4.7/logs/error.log'
 alias nginx-restart='sudo nginx -s stop; sudo nginx;'
 alias phpunit='vendor/bin/phpunit'
+alias behat='vendor/bin/behat'
 alias ll='ls -lhaG'
 alias show_hidden_files="defaults write com.apple.finder AppleShowAllFiles TRUE"
 alias hide_hidden_files="defaults write com.apple.finder AppleShowAllFiles FALSE"
@@ -28,10 +29,14 @@ alias gc="git commit -m"
 alias gac="git commit -am"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
+alias phpmemory='grep -E "upload_max_filesize|memory_limit|post_max_size" /etc/php5/fpm/php.ini'
+alias selenium='java -jar selenium-server-standalone-2.44.0.jar  > /dev/null &'
+
 #Additions
 export PATH=/Applications/MAMP/bin/php/php5.4.4/bin:/Users/larrylaski/bin:/Users/larrylaski/.composer/vendor/bin:/usr/lib/node_modules:/usr/local/bin:/usr/local/sbin:/bin:$PATH
 export LARAVEL_ENV=local
 export EDITOR='subl -w'
+export CLICOLOR=1
 
 #Colors
 txtblk='\[\033[0;30m\]' # Black - Regular
@@ -84,4 +89,4 @@ function ps1_git_dirty {
 
 
 #$bldred\$(parse_git_dirty)
-export PS1="$bldgrn$USER:$bldcyn\$PWD $bldgrn\$(ps1_git_branch)$bldylw ⚡  $bldcyn"
+export PS1="$txtgrn$USER:$txtcyn\$PWD $txtgrn\$(ps1_git_branch)$txtylw ⚡  $txtcyn"
