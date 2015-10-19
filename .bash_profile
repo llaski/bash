@@ -35,7 +35,7 @@ alias phpmemory='grep -E "upload_max_filesize|memory_limit|post_max_size" /etc/p
 alias selenium='java -jar selenium-server-standalone-2.44.0.jar  > /dev/null &'
 
 #Additions
-export PATH=/Applications/MAMP/bin/php/php5.4.4/bin:/Users/larrylaski/bin:/Users/larrylaski/.composer/vendor/bin:/usr/lib/node_modules:/usr/local/bin:/usr/local/sbin:/bin:$PATH
+export PATH=/Applications/MAMP/bin/php/php5.4.4/bin:/Users/larrylaski/bin:/Users/LarryLaski/pear/bin:/Users/larrylaski/.composer/vendor/bin:/usr/lib/node_modules:/usr/local/bin:/usr/local/sbin:/bin:$PATH
 export LARAVEL_ENV=local
 export EDITOR='subl -w'
 export CLICOLOR=1
