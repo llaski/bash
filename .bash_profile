@@ -25,7 +25,9 @@ alias vm='ssh vagrant@127.0.0.1 -p 2222'
 alias gs="git status"
 alias ga="git add"
 alias gc="git commit -m"
+alias gp="git pull"
 alias gac="git commit -am"
+alias gch="git checkout"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 #Additions
