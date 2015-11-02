@@ -26,8 +26,9 @@ alias vm='ssh vagrant@127.0.0.1 -p 2222'
 alias gs="git status"
 alias ga="git add"
 alias gc="git commit -m"
+alias gca="git commit -am"
 alias gp="git pull"
-alias gac="git commit -am"
+alias gpu="git push"
 alias gch="git checkout"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
@@ -35,7 +36,7 @@ alias phpmemory='grep -E "upload_max_filesize|memory_limit|post_max_size" /etc/p
 alias selenium='java -jar selenium-server-standalone-2.44.0.jar  > /dev/null &'
 
 #Additions
-export PATH=/Applications/MAMP/bin/php/php5.4.4/bin:/Users/larrylaski/bin:/Users/larrylaski/.composer/vendor/bin:/usr/lib/node_modules:/usr/local/bin:/usr/local/sbin:/bin:$PATH
+export PATH="/Users/larrylaski/bin:/Users/larrylaski/.composer/vendor/bin:/usr/lib/node_modules:/usr/local/bin:/usr/local/sbin:$(brew --prefix homebrew/php/php56):/bin:$PATH"
 export LARAVEL_ENV=local
 export EDITOR='subl -w'
 export CLICOLOR=1
