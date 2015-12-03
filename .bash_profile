@@ -25,6 +25,7 @@ alias vm='ssh vagrant@127.0.0.1 -p 2222'
 #Github aliases
 alias gs="git status"
 alias ga="git add"
+alias gb="git branch"
 alias gc="git commit -m"
 alias gca="git commit -am"
 alias gp="git pull"
