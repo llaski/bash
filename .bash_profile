@@ -1,3 +1,6 @@
+#Sources
+source $(brew --prefix nvm)/nvm.sh
+
 # Aliases
 alias refresh='. /Users/$USER/.bash_profile'
 alias sites='cd /Users/$USER/Sites'
