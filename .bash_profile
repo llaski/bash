@@ -1,9 +1,7 @@
-#Sources
-source $(brew --prefix nvm)/nvm.sh
-
 # Aliases
 alias refresh='. /Users/$USER/.bash_profile'
 alias sites='cd /Users/$USER/Sites'
+alias settings='cd /Users/$USER/Settings'
 alias subl='open -a "Sublime Text"'
 alias bash='subl ~/.bash_profile'
 alias hosts='subl /etc/hosts'
@@ -33,6 +31,9 @@ alias dkc='docker-compose'
 export PATH="/Users/larrylaski/bin:/Users/larrylaski/.composer/vendor/bin:/usr/lib/node_modules:/usr/local/bin:/usr/local/sbin:$(brew --prefix homebrew/php/php56):/bin:$PATH"
 export EDITOR='subl -w'
 export CLICOLOR=1
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 
 #Colors
 txtblk='\[\033[0;30m\]' # Black - Regular
