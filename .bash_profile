@@ -4,6 +4,8 @@ alias sites='cd /Users/$USER/Sites'
 alias settings='cd /Users/$USER/Settings'
 alias subl='open -a "Sublime Text"'
 alias bash='subl ~/.bash_profile'
+alias sshconfig='subl ~/.ssh/config'
+alias bash_env='subl /Users/$USER/Settings/bash/.bash_profile_env'
 alias hosts='subl /etc/hosts'
 alias phpunit='vendor/bin/phpunit'
 alias ll='ls -lhaG'
@@ -11,6 +13,8 @@ alias show_hidden_files="defaults write com.apple.finder AppleShowAllFiles TRUE"
 alias hide_hidden_files="defaults write com.apple.finder AppleShowAllFiles FALSE"
 
 alias artisan="php artisan"
+alias stop_valet="sudo valet stop; brew services stop mysql;"
+alias start_valet="sudo valet start; brew services start mysql;"
 
 #Github aliases
 alias gs="git status"
@@ -27,10 +31,14 @@ alias dk='docker'
 alias dkm='docker-machine'
 alias dkc='docker-compose'
 
+alias python='python3'
+
 #Additions
-export PATH="/Users/larrylaski/bin:/Users/larrylaski/.composer/vendor/bin:/usr/lib/node_modules:/usr/local/bin:/usr/local/sbin:$(brew --prefix homebrew/php/php56):/bin:$PATH"
+#$(brew --prefix homebrew/php/php56)
+export PATH="/Users/larrylaski/bin:/Users/larrylaski/.composer/vendor/bin:/usr/lib/node_modules:/usr/local/bin:/usr/local/sbin:/bin:$PATH"
 export EDITOR='subl -w'
 export CLICOLOR=1
+export XDEBUG_CONFIG="idekey=VSCODE"
 
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
@@ -73,3 +81,14 @@ export PS1="$txtgrn$USER:$txtcyn\$PWD $txtgrn\$(ps1_git_branch)$txtylw ⚡  $txt
 if [ -f $HOME/Settings/bash/.bash_profile_env ]; then
     . $HOME/Settings/bash/.bash_profile_env
 fi
+
+# Setting PATH for Python 3.6
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+export PATH
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/larrylaski/Sites/StrongAnalytics/topbox-api/scripts/google-cloud-sdk/path.bash.inc' ]; then . '/Users/larrylaski/Sites/StrongAnalytics/topbox-api/scripts/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/larrylaski/Sites/StrongAnalytics/topbox-api/scripts/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/larrylaski/Sites/StrongAnalytics/topbox-api/scripts/google-cloud-sdk/completion.bash.inc'; fi
